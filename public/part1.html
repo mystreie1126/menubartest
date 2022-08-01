@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="bg-purple-500 w-auto flex flex-col-reverse">
+        <div class="h-10 w-10 bg-red-500">1</div>
+        <div class="h-10 w-10 bg-green-500">2</div>
+        <div class="h-10 w-10 bg-yellow-500">3</div>
+    </h1>
+    <h1 class="mt-6 bg-pink-500 w-auto flex flex-row-reverse">
+        <div class="h-10 w-10 bg-purple-500">1</div>
+        <div class="h-10 w-10 bg-green-500">2</div>
+        <div class="h-10 w-10 bg-blue-500">3</div>
+    </h1>
+
+    <h1 class="mt-6 bg-red-500 w-auto flex flex-wrap-reverse">
+        <div class="h-10 w-40 bg-purple-500">4</div>
+        <div class="h-10 w-40 bg-green-500">5</div>
+        <div class="h-10 w-40 bg-blue-500">6</div>
+    </h1>
+    <p class="mt-6">1. flex initial allow item to shrink but not grow<br>
+        2.flex-auto allow item shirnk and grow<br>
+        3.flex-none doesn't allow grow and shirnk same as <br>
+        4.flex-shinrk-0 not allow to flex-shinrk<br>
+        5.flex-grow-0 not allow to grow  <br>
+        6.order-1 mark the order of flex items, no order class will be the first in order
+    </p>
+    <h1 class=" bg-red-500 w-auto flex ">
+        <div class="order-5 h-10 w-40 bg-purple-500">7</div>
+        <div class="order-2 h-10 w-40 bg-green-500">8</div>
+        <div class="flex-grow-0 h-10 w-40 bg-blue-500">9</div>
+    </h1>
+
+    <p class="mt-6">Grid column:<br>
+        1.grid-rows-number assign how many rows <br>
+        2.gap-number assign the gap between grids <br>
+        3. cols-span-number give grid item how many grid column width it want to have
+    </p>
+    <div class="bg-yellow-500 w-auto grid grid-cols-3 grid-flow-col gap-10">
+        <div class="col-span-4 h-10 bg-red-500">1</div>
+        <div class="h-10 bg-red-500">2</div>
+        <div class="h-10 bg-red-500">3</div>
+        <div class="h-10 bg-red-500">4</div>
+        <div class="col-span-2 h-10 bg-red-500">5</div>
+        <div class="h-10 bg-red-500">6</div>
+        <div class="h-10 bg-red-500">7</div>
+        <div class="h-10 bg-red-500">8</div>
+        <div class="h-10 bg-red-500">9</div>
+    </div>
+
+    <p class="mt-6">Grid row:<br>
+        1.grid-row-number assign how many rows <br>
+        2.row-span-2 same as col-span-2 just row or col<br>
+        3. grid-flow defines how the element will be placed in grid
+    </p>
+    <div class="bg-yellow-500 w-auto grid grid-rows-2 grid-flow-col gap-3">
+        <div class="row-span-2 h-10 bg-red-500">1</div>
+        <div class="h-10 bg-red-500">2</div>
+        <div class="h-10 bg-red-500">3</div>
+        <div class="h-10 bg-red-500">4</div>
+        <div class="h-10 bg-red-500">5</div>
+        <div class="h-10 bg-red-500">6</div>
+        <div class="h-10 bg-red-500">7</div>
+        <div class="h-10 bg-red-500">8</div>
+        <div class="h-10 bg-red-500">9</div>
+    </div>
+</body>
+</html>
